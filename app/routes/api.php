@@ -2,6 +2,9 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\VendedorController;
+use App\Http\Controllers\VendaController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -14,6 +17,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
+Route::post('/vendedores', [VendedorController::class, 'criarVendedor']);
+Route::post('/listar', [VendedorController::class, 'listarVendedores']);
+Route::get('/listarVendedor/{id}/vendas', [VendedorController::class, 'listarVendas']);
+
+Route::post('/vendas', [VendaController::class, 'lancarVenda']);
