@@ -1,13 +1,13 @@
-Desafio
+## Desafio
 
-Tecnologias Usadas:
-
+## Tecnologias Usadas:
+ 
 Laravel
 Mysql
 Docker
 API
 
-Para utilizar entrar na pasta da APP
+## Para utilizar entrar na pasta da APP
 
 cd app/
 
@@ -18,10 +18,10 @@ docker-compose up -d
 
 Front criado nas blades
 
-command de envio dos relatorios diariamente 
+## command de envio dos relatorios diariamente 
 api\app\Console\Commands\EnviarRelatorioVendas.php
 
-Documentacao da api
+## Documentacao da api
 
 docker configurado para porta 8080 
 
